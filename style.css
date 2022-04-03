@@ -1,40 +1,107 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+        height: 50%;
+        width: 50%
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .custom-map-control-button {
+        background-color: #fff;
+        border: 0;
+        border-radius: 2px;
+        box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+        margin: 10px;
+        padding: 0 0.5em;
+        font: 400 18px Roboto, Arial, sans-serif;
+        overflow: hidden;
+        height: 40px;
+        cursor: pointer;
+      }
+      .custom-map-control-button:hover {
+        background: #ebebeb;
+      }
+      *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-image: url(images/loadingpage01.png);
+        background-position: center;
+        background-size: cover;
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+        position: relative;
+    }
+    
+    .navbar{
+        width: 100%;
+        height: 15vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .button{
+        width: 40px;
+        cursor: pointer;
+    }
+    
+    nav{
+        flex: 1;
+        padding-left: 800px;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 0px 40 px;
+    }
 
-.container{
-    height: 100vh;
-    width: 100%;
-    background-image: url(images/background.png);
-    background-position: center;
-    background-size: cover;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-sizing: border-box;
-    position: relative;
-}
+    nav ul li a{
+        text-decoration: none;
+        color: #333;
+    }
 
-.navbar{
-    width: 100%;
-    height: 15vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
+    .content h1{
+        font-size: 60px;
+        font-size: 100;
+        margin-top: 24px;
+        margin-bottom: 15px;
+        color: #9FC1A4;
+        padding-left: 10%
+    }
 
-.button{
-    width: 40px;
-    cursor: pointer;
-}
+    .content .btn{
+        font-size: 60px;
+        font-size: 100;
+        margin-top: 24px;
+        margin-bottom: 15px;
+        color: #9FC1A4;
+        padding-left: 10%
+    }
 
-nav{
-    flex: 1;
-    padding-left: 60px;
-}
+    .content .btn{
+        display: inline-block;
+        background: linear-gradient(45deg, #9FC1A4, #ffffff);
+        border-radius: 6px;
+        padding: 10px 20 px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: #9FC1A4;
+        box-shadow: 3px 8px 22px rgba(0, 0, 0, 0.3);
+    }
 
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 0px 20 px;
-}
+    .map {
+        padding-left: 5%;
+    }
